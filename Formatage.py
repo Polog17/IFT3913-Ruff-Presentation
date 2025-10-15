@@ -2,9 +2,9 @@ import sys, math, random
 from math import sqrt
 import collections
 
-unused = 42  # variable inutilisée pour déclencher un avertissement ruff
 
 def is_prime(n):
+    unused = 42  # variable inutilisée pour déclencher un avertissement ruff
     if n<=1: return False
     if n%2==0 and n!=2: return n==2
     r=int(sqrt(n))
@@ -38,3 +38,5 @@ print("Primes up to 30:", primes_up_to(30))
 print("Stats:", stats([1,2,3,4,5]))
 print("Weird calc up to 50:", weird_calc(50))
 print("Messy formatter:", messy_formatter(['a', 'b', 'c']))
+
+# LIGNE TROP LONGUE POUR DÉMONSTRER LE FORMATAGE AUTOMATIQUE PAR RUFF, ELLE DEVRAIT ÊTRE RÉDUITE À UNE LONGUEUR DE 79 CARACTÈRES SELON LA CONFIGURATION.
