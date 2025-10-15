@@ -1,0 +1,7 @@
+# Ce fichier est le pyproject.toml que je ferai pendant la présentation
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["E", "F"]
